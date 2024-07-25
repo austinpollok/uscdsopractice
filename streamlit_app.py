@@ -30,4 +30,6 @@ st.line_chart(df)
 
 st.write("Now we can look at this time-series plot with Plotly")
 
-st.plotly_chart(df)
+plotly_figure = px.line(df, title="MSFT RH Holding")
+
+st.plotly_chart(plotly_figure)
