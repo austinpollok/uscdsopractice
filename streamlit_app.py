@@ -19,7 +19,7 @@ st.line_chart(chart_data)
 url = 'https://drive.google.com/file/d/12GNv_tTdQBuFawJ0Jc9RW82-2qfMBmlS/view?usp=drive_link'
 path = 'https://drive.google.com/uc?export=download&id='+url.split('/')[-2]
 df = pd.read_csv(path)
-df.set_index(0, inplace=True)
+df.set_index('timestamp', inplace=True)
 df.sort_index(inplace=True)
 
 st.write(df.describe())
