@@ -22,4 +22,4 @@ df = pd.read_csv(path)
 
 st.write(df.describe())
 
-st.line_chart(df.iloc[0:100, 0:2])
+# st.line_chart(df.iloc[0:100, 0:2])
