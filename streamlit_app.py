@@ -22,6 +22,6 @@ df = pd.read_csv(path)
 df.set_index(0, inplace=True)
 df.sort_index(inplace=True)
 
-st.write(df.mean())
+st.write("Hello")
 
 st.line_chart(df)
