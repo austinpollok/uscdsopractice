@@ -20,6 +20,6 @@ url = 'https://drive.google.com/file/d/1ebDb1xO_eXCY-m6oyiab2aRuF2oOt8jq/view?us
 path = 'https://drive.google.com/uc?export=download&id='+url.split('/')[-2]
 df = pd.read_csv(path)
 
-st.write(df)
+st.write(df.describe())
 
 st.line_chart(df.iloc[0:100, 0:2])
