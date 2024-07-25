@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import plotly.express as px
+import plotly
 
 st.write("# Streamlit Calculator")
 
@@ -25,3 +27,7 @@ df.sort_index(inplace=True)
 st.write(df.describe())
 
 st.line_chart(df)
+
+st.write("Now we can look at this time-series plot with Plotly")
+
+st.plotly_chart(df)
