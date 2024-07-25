@@ -19,7 +19,9 @@ st.line_chart(chart_data)
 url = 'https://drive.google.com/file/d/12GNv_tTdQBuFawJ0Jc9RW82-2qfMBmlS/view?usp=sharing'
 path = 'https://drive.google.com/uc?export=download&id='+url.split('/')[-2]
 df = pd.read_csv(path)
+df.set_index(0, inplace=True)
+df.sort_index(inplace=True)
 
-st.write(df.describe())
+st.write(df.mean())
 
 st.line_chart(df.iloc[0:100, 0:2])
