@@ -14,3 +14,12 @@ st.write("# Answer is ", number_3)
 chart_data = pd.DataFrame(np.random.randn(20, 3), columns=["a", "b", "c"])
 
 st.line_chart(chart_data)
+
+
+url = 'https://drive.google.com/file/d/1ebDb1xO_eXCY-m6oyiab2aRuF2oOt8jq/view?usp=drive_link'
+path = 'https://drive.google.com/uc?export=download&id='+url.split('/')[-2]
+df = pd.read_csv(path)
+
+st.write(df)
+
+st.line_chart(df)
