@@ -16,7 +16,7 @@ chart_data = pd.DataFrame(np.random.randn(20, 3), columns=["a", "b", "c"])
 st.line_chart(chart_data)
 
 
-url = 'https://drive.google.com/file/d/1z6kMSBQl9TVklt2q4V76H1iWnv32KEUw/view?usp=drive_link'
+url = 'https://drive.google.com/file/d/12GNv_tTdQBuFawJ0Jc9RW82-2qfMBmlS/view?usp=sharing'
 path = 'https://drive.google.com/uc?export=download&id='+url.split('/')[-2]
 df = pd.read_csv(path)
 
